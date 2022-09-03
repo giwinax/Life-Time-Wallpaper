@@ -11,6 +11,9 @@
 		32A219C328906A09003F3576 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A219C228906A09003F3576 /* ViewController.swift */; };
 		32A219C528906A0B003F3576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32A219C428906A0B003F3576 /* Assets.xcassets */; };
 		32A219C828906A0B003F3576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A219C628906A0B003F3576 /* Main.storyboard */; };
+		32A219D128906E01003F3576 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 32A219D028906E01003F3576 /* Alamofire */; };
+		32A219D428906E1C003F3576 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 32A219D328906E1C003F3576 /* SwiftyJSON */; };
+		32A219D82890FF2C003F3576 /* Wallpaper in Frameworks */ = {isa = PBXBuildFile; productRef = 32A219D72890FF2C003F3576 /* Wallpaper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32A219D82890FF2C003F3576 /* Wallpaper in Frameworks */,
+				32A219D428906E1C003F3576 /* SwiftyJSON in Frameworks */,
+				32A219D128906E01003F3576 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +83,11 @@
 			dependencies = (
 			);
 			name = "Life Time Wallpaper";
+			packageProductDependencies = (
+				32A219D028906E01003F3576 /* Alamofire */,
+				32A219D328906E1C003F3576 /* SwiftyJSON */,
+				32A219D72890FF2C003F3576 /* Wallpaper */,
+			);
 			productName = "Life Time Wallpaper";
 			productReference = 32A219BD28906A09003F3576 /* Life Time Wallpaper.app */;
 			productType = "com.apple.product-type.application";
@@ -105,6 +116,12 @@
 				Base,
 			);
 			mainGroup = 32A219B428906A09003F3576;
+			packageReferences = (
+				32A219CF28906E01003F3576 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				32A219D228906E1C003F3576 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				32A219D52890FEAF003F3576 /* XCRemoteSwiftPackageReference "macos-wallpaper" */,
+				32A219D62890FF2C003F3576 /* XCRemoteSwiftPackageReference "macos-wallpaper" */,
+			);
 			productRefGroup = 32A219BE28906A09003F3576 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +356,59 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		32A219CF28906E01003F3576 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://github.com/Alamofire/Alamofire/";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		32A219D228906E1C003F3576 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		32A219D52890FEAF003F3576 /* XCRemoteSwiftPackageReference "macos-wallpaper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/macos-wallpaper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		32A219D62890FF2C003F3576 /* XCRemoteSwiftPackageReference "macos-wallpaper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/macos-wallpaper";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		32A219D028906E01003F3576 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32A219CF28906E01003F3576 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		32A219D328906E1C003F3576 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32A219D228906E1C003F3576 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		32A219D72890FF2C003F3576 /* Wallpaper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32A219D62890FF2C003F3576 /* XCRemoteSwiftPackageReference "macos-wallpaper" */;
+			productName = Wallpaper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 32A219B528906A09003F3576 /* Project object */;
 }

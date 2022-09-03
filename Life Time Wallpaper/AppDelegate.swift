@@ -4,7 +4,10 @@
 //
 //  Created by s b on 26.07.2022.
 //
-
+import Alamofire
+import Foundation
+import SwiftyJSON
+import AppKit
 import Cocoa
 
 @main
@@ -25,6 +28,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return true
     }
 
+    
+    
 
 }
+
 
